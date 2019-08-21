@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C07A8B3B1F41B10000AED9E0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C07A8B391F41B10000AED9E0 /* LaunchScreen.xib */; };
+		C0FA1B8D1F41A79E00B688F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FA1B8C1F41A79E00B688F2 /* main.m */; };
+		C0FA1B901F41A79E00B688F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FA1B8F1F41A79E00B688F2 /* AppDelegate.m */; };
+		C0FA1B961F41A79E00B688F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0FA1B941F41A79E00B688F2 /* Main.storyboard */; };
+		C0FA1B981F41A79E00B688F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0FA1B971F41A79E00B688F2 /* Assets.xcassets */; };
+		C0FA1BA41F41A91600B688F2 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FA1BA31F41A91600B688F2 /* DBManager.m */; };
+		C0FA1BA81F41A94D00B688F2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FA1BA71F41A94D00B688F2 /* libsqlite3.tbd */; };
+		C0FA1BAA1F41A95600B688F2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FA1BA91F41A95600B688F2 /* MapKit.framework */; };
+		C0FA1BAC1F41A95E00B688F2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FA1BAB1F41A95E00B688F2 /* CoreLocation.framework */; };
+		C0FA1BB41F41A9C600B688F2 /* EmptyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FA1BAF1F41A9C600B688F2 /* EmptyVC.m */; };
+		C0FA1BB51F41A9C600B688F2 /* PathViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FA1BB11F41A9C600B688F2 /* PathViewCell.m */; };
+		C0FA1BB61F41A9C600B688F2 /* MapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FA1BB31F41A9C600B688F2 /* MapPoint.m */; };
+		C0FA1BC11F41A9DA00B688F2 /* PathTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FA1BB81F41A9DA00B688F2 /* PathTableViewController.m */; };
+		C0FA1BC21F41A9DA00B688F2 /* AddPathVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FA1BBA1F41A9DA00B688F2 /* AddPathVC.m */; };
+		C0FA1BC31F41A9DA00B688F2 /* ShowPathVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FA1BBC1F41A9DA00B688F2 /* ShowPathVC.m */; };
+		C0FA1BC41F41A9DA00B688F2 /* CalendarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FA1BBE1F41A9DA00B688F2 /* CalendarVC.m */; };
+		C0FA1BC51F41A9DA00B688F2 /* DatePathTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FA1BC01F41A9DA00B688F2 /* DatePathTVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C07A8B3A1F41B10000AED9E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C0FA1B881F41A79E00B688F2 /* SportTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0FA1B8C1F41A79E00B688F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C0FA1B8E1F41A79E00B688F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C0FA1B8F1F41A79E00B688F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C0FA1B951F41A79E00B688F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0FA1B971F41A79E00B688F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0FA1B9C1F41A79E00B688F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0FA1BA21F41A91600B688F2 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		C0FA1BA31F41A91600B688F2 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		C0FA1BA51F41A92400B688F2 /* pathsdb.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = pathsdb.sql; sourceTree = "<group>"; };
+		C0FA1BA71F41A94D00B688F2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		C0FA1BA91F41A95600B688F2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C0FA1BAB1F41A95E00B688F2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C0FA1BAE1F41A9C600B688F2 /* EmptyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyVC.h; sourceTree = "<group>"; };
+		C0FA1BAF1F41A9C600B688F2 /* EmptyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyVC.m; sourceTree = "<group>"; };
+		C0FA1BB01F41A9C600B688F2 /* PathViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathViewCell.h; sourceTree = "<group>"; };
+		C0FA1BB11F41A9C600B688F2 /* PathViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathViewCell.m; sourceTree = "<group>"; };
+		C0FA1BB21F41A9C600B688F2 /* MapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPoint.h; sourceTree = "<group>"; };
+		C0FA1BB31F41A9C600B688F2 /* MapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPoint.m; sourceTree = "<group>"; };
+		C0FA1BB71F41A9DA00B688F2 /* PathTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathTableViewController.h; sourceTree = "<group>"; };
+		C0FA1BB81F41A9DA00B688F2 /* PathTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathTableViewController.m; sourceTree = "<group>"; };
+		C0FA1BB91F41A9DA00B688F2 /* AddPathVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPathVC.h; sourceTree = "<group>"; };
+		C0FA1BBA1F41A9DA00B688F2 /* AddPathVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPathVC.m; sourceTree = "<group>"; };
+		C0FA1BBB1F41A9DA00B688F2 /* ShowPathVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowPathVC.h; sourceTree = "<group>"; };
+		C0FA1BBC1F41A9DA00B688F2 /* ShowPathVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowPathVC.m; sourceTree = "<group>"; };
+		C0FA1BBD1F41A9DA00B688F2 /* CalendarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarVC.h; sourceTree = "<group>"; };
+		C0FA1BBE1F41A9DA00B688F2 /* CalendarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarVC.m; sourceTree = "<group>"; };
+		C0FA1BBF1F41A9DA00B688F2 /* DatePathTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePathTVC.h; sourceTree = "<group>"; };
+		C0FA1BC01F41A9DA00B688F2 /* DatePathTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePathTVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0FA1B851F41A79E00B688F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0FA1BAC1F41A95E00B688F2 /* CoreLocation.framework in Frameworks */,
+				C0FA1BAA1F41A95600B688F2 /* MapKit.framework in Frameworks */,
+				C0FA1BA81F41A94D00B688F2 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0FA1B7F1F41A79E00B688F2 = {
+			isa = PBXGroup;
+			children = (
+				C0FA1B8A1F41A79E00B688F2 /* SportTracker */,
+				C0FA1BB71F41A9DA00B688F2 /* PathTableViewController.h */,
+				C0FA1BB81F41A9DA00B688F2 /* PathTableViewController.m */,
+				C0FA1BB91F41A9DA00B688F2 /* AddPathVC.h */,
+				C0FA1BBA1F41A9DA00B688F2 /* AddPathVC.m */,
+				C0FA1BBB1F41A9DA00B688F2 /* ShowPathVC.h */,
+				C0FA1BBC1F41A9DA00B688F2 /* ShowPathVC.m */,
+				C0FA1BBD1F41A9DA00B688F2 /* CalendarVC.h */,
+				C0FA1BBE1F41A9DA00B688F2 /* CalendarVC.m */,
+				C0FA1BBF1F41A9DA00B688F2 /* DatePathTVC.h */,
+				C0FA1BC01F41A9DA00B688F2 /* DatePathTVC.m */,
+				C0FA1B891F41A79E00B688F2 /* Products */,
+				C0FA1BA61F41A94D00B688F2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C0FA1B891F41A79E00B688F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0FA1B881F41A79E00B688F2 /* SportTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0FA1B8A1F41A79E00B688F2 /* SportTracker */ = {
+			isa = PBXGroup;
+			children = (
+				C0FA1B8E1F41A79E00B688F2 /* AppDelegate.h */,
+				C0FA1B8F1F41A79E00B688F2 /* AppDelegate.m */,
+				C0FA1B941F41A79E00B688F2 /* Main.storyboard */,
+				C07A8B391F41B10000AED9E0 /* LaunchScreen.xib */,
+				C0FA1BAD1F41A9A800B688F2 /* Basic Class */,
+				C0FA1B8B1F41A79E00B688F2 /* Supporting Files */,
+			);
+			path = SportTracker;
+			sourceTree = "<group>";
+		};
+		C0FA1B8B1F41A79E00B688F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0FA1B971F41A79E00B688F2 /* Assets.xcassets */,
+				C0FA1BA21F41A91600B688F2 /* DBManager.h */,
+				C0FA1BA31F41A91600B688F2 /* DBManager.m */,
+				C0FA1B8C1F41A79E00B688F2 /* main.m */,
+				C0FA1BA51F41A92400B688F2 /* pathsdb.sql */,
+				C0FA1B9C1F41A79E00B688F2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C0FA1BA61F41A94D00B688F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0FA1BAB1F41A95E00B688F2 /* CoreLocation.framework */,
+				C0FA1BA91F41A95600B688F2 /* MapKit.framework */,
+				C0FA1BA71F41A94D00B688F2 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0FA1BAD1F41A9A800B688F2 /* Basic Class */ = {
+			isa = PBXGroup;
+			children = (
+				C0FA1BAE1F41A9C600B688F2 /* EmptyVC.h */,
+				C0FA1BAF1F41A9C600B688F2 /* EmptyVC.m */,
+				C0FA1BB01F41A9C600B688F2 /* PathViewCell.h */,
+				C0FA1BB11F41A9C600B688F2 /* PathViewCell.m */,
+				C0FA1BB21F41A9C600B688F2 /* MapPoint.h */,
+				C0FA1BB31F41A9C600B688F2 /* MapPoint.m */,
+			);
+			name = "Basic Class";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0FA1B871F41A79E00B688F2 /* SportTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0FA1B9F1F41A79E00B688F2 /* Build configuration list for PBXNativeTarget "SportTracker" */;
+			buildPhases = (
+				C0FA1B841F41A79E00B688F2 /* Sources */,
+				C0FA1B851F41A79E00B688F2 /* Frameworks */,
+				C0FA1B861F41A79E00B688F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SportTracker;
+			productName = SportTracker;
+			productReference = C0FA1B881F41A79E00B688F2 /* SportTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0FA1B801F41A79E00B688F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Domenico Barretta";
+				TargetAttributes = {
+					C0FA1B871F41A79E00B688F2 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = C0FA1B831F41A79E00B688F2 /* Build configuration list for PBXProject "SportTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0FA1B7F1F41A79E00B688F2;
+			productRefGroup = C0FA1B891F41A79E00B688F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0FA1B871F41A79E00B688F2 /* SportTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0FA1B861F41A79E00B688F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0FA1B981F41A79E00B688F2 /* Assets.xcassets in Resources */,
+				C07A8B3B1F41B10000AED9E0 /* LaunchScreen.xib in Resources */,
+				C0FA1B961F41A79E00B688F2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0FA1B841F41A79E00B688F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0FA1BB51F41A9C600B688F2 /* PathViewCell.m in Sources */,
+				C0FA1BB41F41A9C600B688F2 /* EmptyVC.m in Sources */,
+				C0FA1BC41F41A9DA00B688F2 /* CalendarVC.m in Sources */,
+				C0FA1BC31F41A9DA00B688F2 /* ShowPathVC.m in Sources */,
+				C0FA1B901F41A79E00B688F2 /* AppDelegate.m in Sources */,
+				C0FA1B8D1F41A79E00B688F2 /* main.m in Sources */,
+				C0FA1BA41F41A91600B688F2 /* DBManager.m in Sources */,
+				C0FA1BC51F41A9DA00B688F2 /* DatePathTVC.m in Sources */,
+				C0FA1BC21F41A9DA00B688F2 /* AddPathVC.m in Sources */,
+				C0FA1BB61F41A9C600B688F2 /* MapPoint.m in Sources */,
+				C0FA1BC11F41A9DA00B688F2 /* PathTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C07A8B391F41B10000AED9E0 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C07A8B3A1F41B10000AED9E0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		C0FA1B941F41A79E00B688F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0FA1B951F41A79E00B688F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0FA1B9D1F41A79E00B688F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C0FA1B9E1F41A79E00B688F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0FA1BA01F41A79E00B688F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SportTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.my.SportTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C0FA1BA11F41A79E00B688F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SportTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.my.SportTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0FA1B831F41A79E00B688F2 /* Build configuration list for PBXProject "SportTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0FA1B9D1F41A79E00B688F2 /* Debug */,
+				C0FA1B9E1F41A79E00B688F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0FA1B9F1F41A79E00B688F2 /* Build configuration list for PBXNativeTarget "SportTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0FA1BA01F41A79E00B688F2 /* Debug */,
+				C0FA1BA11F41A79E00B688F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0FA1B801F41A79E00B688F2 /* Project object */;
+}
